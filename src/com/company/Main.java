@@ -1,6 +1,7 @@
 package com.company;
 import java.util.Scanner;
 class Main {
+    // public static void
     public static void main(String[] args) {
         Pokemon bulbasaur = new Pokemon();
         bulbasaur.name = "Bulbasaur";
@@ -17,11 +18,17 @@ class Main {
         Attack scrape = new Attack();
         scrape.name = "Scrape";
         scrape.dmg = 2;
+        String pokeslot1 = "none";
+        String pokeslot2 = "none";
+        String pokeslot3 = "none";
+        String pokeslot4 = "none";
+        String pokeslot5 = "none";
+        String pokeslot6 = "none";
         String move = "place";
-        String move1 = "placeholder";
-        String move2 = "placeholder";
-        String move3 = "placeholder";
-        String move4 = "placeholder";
+        String move1 = "none";
+        String move2 = "none";
+        String move3 = "none";
+        String move4 = "none";
         String battle = "place";
         Scanner sc = new Scanner(System.in);
         Enemy box = new Enemy();
@@ -55,7 +62,17 @@ class Main {
             case "squirtle":
                 System.out.println("You chose Squirtle!");
                 break;
+            case "Bulbasuar":
+                System.out.println("You chose Bulbasuar!");
+                break;
+            case "bulbasuar":
+                System.out.println("You chose Bulbasuar!");
+                break;
+            default:
+                System.out.println("Thats not one of the options. \n");
         }
+
+
 
 
     }

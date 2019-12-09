@@ -20,12 +20,12 @@ class Main {
         Attack scrape = new Attack();
         scrape.name = "Scrape";
         scrape.dmg = rn.nextInt(6);
-        String pokeslot1 = "none";
-        String pokeslot2 = "none";
-        String pokeslot3 = "none";
-        String pokeslot4 = "none";
-        String pokeslot5 = "none";
-        String pokeslot6 = "none";
+        String pokeslot_one = "none";
+        String pokeslot_two = "none";
+        String pokeslot_three = "none";
+        String pokeslot_four = "none";
+        String pokeslot_five = "none";
+        String pokeslot_six = "none";
         String move = "place";
         String move1 = "none";
         String move2 = "none";
@@ -55,38 +55,55 @@ class Main {
             case "Charmander":
                 System.out.println("You chose Charmander!");
                 break;
-                pokeslot1 = "Bulbasuar";
+                pokeslot_one = "Bulbasuar";
             case "charmander":
                 System.out.println("You chose Charmander!");
                 break;
-                pokeslot1 = "Bulbasuar";
+                pokeslot_one = "Bulbasuar";
             case "Squirtle":
                 System.out.println("You chose Squirtle!");
                 break;
-                pokeslot1 = "Bulbasuar";
+                pokeslot_one = "Bulbasuar";
             case "squirtle":
                 System.out.println("You chose Squirtle!");
                 break;
-                pokeslot1 = "Bulbasuar";
+                pokeslot_one = "Bulbasuar";
             case "Bulbasuar":
                 System.out.println("You chose Bulbasuar!");
                 break;
-                pokeslot1 = "Bulbasuar";
+                pokeslot_one = "Bulbasuar";
             case "bulbasuar":
                 System.out.println("You chose Bulbasuar!");
                 break;
-                pokeslot1 = "Bulbasuar";
+                pokeslot_one = "Bulbasuar";
             default:
                 System.out.println("Thats not one of the options. \n");
         }
         while (true){
             System.out.println("What do you want to do? \n \n Walk \n Bag \n Pokemon \n Pokedex \n ");
             String command = sc.nextLine();
-            switch (command){
-                case "Walk":
+            switch (command) {
+                case "walk":
                     System.out.println("You walked forward. \n");
+                    int wp = wp + 1;
+                    battlechance = rn.nextInt(11);
+                    if (battlechance > 5){
+                        fight();
+                    }
             }
 
+        }
+    }
+    public static void fight_one(){
+        Random rn = new Random();
+        int enemyspawn = rn.nextInt(21);
+        switch (enemyspawn){
+            case 0:
+                System.out.println("A Charmander appeared!\n");
+                while(pokeslot_one > 0 && pokeslot_two > 0 && pokeslot_three > 0 && pokeslot_four > 0 && pokeslot_five > 0 && pokeslot_six > 0){
+                    System.out.println("What will you do?");
+                    String moveselect = sc.nextLine();
+                }
         }
     }
 }

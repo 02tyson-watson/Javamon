@@ -86,9 +86,9 @@ class Main {
                 case "walk":
                     System.out.println("You walked forward. \n");
                     int wp = wp + 1;
-                    battlechance = rn.nextInt(11);
+                    int battlechance = rn.nextInt(11);
                     if (battlechance > 5){
-                        fight();
+                        fight_one();
                     }
             }
 
@@ -97,13 +97,6 @@ class Main {
     public static void fight_one(){
         Random rn = new Random();
         int enemyspawn = rn.nextInt(21);
-        switch (enemyspawn){
-            case 0:
-                System.out.println("A Charmander appeared!\n");
-                while(pokeslot_one > 0 && pokeslot_two > 0 && pokeslot_three > 0 && pokeslot_four > 0 && pokeslot_five > 0 && pokeslot_six > 0){
-                    System.out.println("What will you do?");
-                    String moveselect = sc.nextLine();
-                }
-        }
+        System.out.println(enemyspawn);
     }
 }

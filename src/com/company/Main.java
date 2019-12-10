@@ -32,6 +32,7 @@ class Main {
         String move3 = "none";
         String move4 = "none";
         String battle = "place";
+        int wp = 0;
         Scanner sc = new Scanner(System.in);
         Enemy box = new Enemy();
         box.name = "Box";
@@ -54,28 +55,27 @@ class Main {
         switch (starterselect){
             case "Charmander":
                 System.out.println("You chose Charmander!");
+                pokeslot_one = "Charmander";
                 break;
-                pokeslot_one = "Bulbasuar";
             case "charmander":
                 System.out.println("You chose Charmander!");
+                pokeslot_one = "Charmander";
                 break;
-                pokeslot_one = "Bulbasuar";
             case "Squirtle":
                 System.out.println("You chose Squirtle!");
+                pokeslot_one = "Squirtle";
                 break;
-                pokeslot_one = "Bulbasuar";
             case "squirtle":
                 System.out.println("You chose Squirtle!");
-                break;
-                pokeslot_one = "Bulbasuar";
+                pokeslot_one = "Squirtle";
             case "Bulbasuar":
                 System.out.println("You chose Bulbasuar!");
-                break;
                 pokeslot_one = "Bulbasuar";
+                break;
             case "bulbasuar":
                 System.out.println("You chose Bulbasuar!");
-                break;
                 pokeslot_one = "Bulbasuar";
+                break;
             default:
                 System.out.println("Thats not one of the options. \n");
         }
@@ -85,18 +85,73 @@ class Main {
             switch (command) {
                 case "walk":
                     System.out.println("You walked forward. \n");
-                    int wp = wp + 1;
+                    wp = wp + 1;
                     int battlechance = rn.nextInt(11);
                     if (battlechance > 5){
-                        fight_one();
+                        design();
                     }
             }
 
         }
     }
-    public static void fight_one(){
-        Random rn = new Random();
-        int enemyspawn = rn.nextInt(21);
-        System.out.println(enemyspawn);
+    public static void design(){
+        try{
+            System.out.println("             |             ");
+            Thread.sleep(150);
+            System.out.println("            |||            ");
+            Thread.sleep(150);
+            System.out.println("           |||||           ");
+            Thread.sleep(150);
+            System.out.println("          |||||||          ");
+            Thread.sleep(150);
+            System.out.println("         |||||||||         ");
+            Thread.sleep(150);
+            System.out.println("        |||||||||||        ");
+            Thread.sleep(150);
+            System.out.println("       |||||||||||||       ");
+            Thread.sleep(150);
+            System.out.println("      |||||||||||||||      ");
+            Thread.sleep(150);
+            System.out.println("     |||||||||||||||||     ");
+            Thread.sleep(150);
+            System.out.println("    |||||||||||||||||||    ");
+            Thread.sleep(150);
+            System.out.println("   |||||||||||||||||||||   ");
+            Thread.sleep(150);
+            System.out.println("  |||||||||||||||||||||||  ");
+            Thread.sleep(150);
+            System.out.println(" ||||||||||||||||||||||||| ");
+            Thread.sleep(150);
+            System.out.println("     BATTLE    START!      ");
+            Thread.sleep(800);
+            System.out.println(" ||||||||||||||||||||||||| ");
+            Thread.sleep(150);
+            System.out.println("  |||||||||||||||||||||||  ");
+            Thread.sleep(150);
+            System.out.println("   |||||||||||||||||||||   ");
+            Thread.sleep(150);
+            System.out.println("    |||||||||||||||||||    ");
+            Thread.sleep(150);
+            System.out.println("     |||||||||||||||||     ");
+            Thread.sleep(150);
+            System.out.println("      |||||||||||||||      ");
+            Thread.sleep(150);
+            System.out.println("       |||||||||||||       ");
+            Thread.sleep(150);
+            System.out.println("        |||||||||||        ");
+            Thread.sleep(150);
+            System.out.println("         |||||||||         ");
+            Thread.sleep(150);
+            System.out.println("          |||||||          ");
+            Thread.sleep(150);
+            System.out.println("           |||||           ");
+            Thread.sleep(150);
+            System.out.println("            |||            ");
+            Thread.sleep(150);
+            System.out.println("             |             ");
+            Thread.sleep(150);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

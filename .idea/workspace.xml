@@ -82,22 +82,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1815" height="724" key="GridCell.Tab.0.bottom" timestamp="1575990169499">
+    <state width="1815" height="30" key="GridCell.Tab.0.bottom" timestamp="1576077174653">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="724" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1575990169499" />
-    <state width="1815" height="724" key="GridCell.Tab.0.center" timestamp="1575990169499">
+    <state width="1815" height="30" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
+    <state width="1815" height="30" key="GridCell.Tab.0.center" timestamp="1576077174653">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="724" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1575990169499" />
-    <state width="1815" height="724" key="GridCell.Tab.0.left" timestamp="1575990169499">
+    <state width="1815" height="30" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
+    <state width="1815" height="30" key="GridCell.Tab.0.left" timestamp="1576077174653">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="724" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1575990169499" />
-    <state width="1815" height="724" key="GridCell.Tab.0.right" timestamp="1575990169499">
+    <state width="1815" height="30" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
+    <state width="1815" height="30" key="GridCell.Tab.0.right" timestamp="1576077174653">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="724" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1575990169499" />
+    <state width="1815" height="30" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
     <state x="373" y="160" key="new project wizard" timestamp="1575986391088">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -108,7 +108,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>72</line>
+          <line>83</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

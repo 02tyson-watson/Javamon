@@ -13,17 +13,30 @@ class Main {
         bulbasaur.name = "Bulbasaur";
         bulbasaur.level = 1;
         bulbasaur.health = 12 * (bulbasaur.level/2);
+        bulbasaur.summonnum = 1;
         Pokemon squirtle = new Pokemon();
         squirtle.name = "Squirtle";
         squirtle.level = 1;
         squirtle.health = 15 * (squirtle.level/2);
+        squirtle.summonnum = 2;
         Pokemon charmander = new Pokemon();
         charmander.name = "Charmander";
         charmander.level = 3;
         charmander.health = 20 * (charmander.level/2);
+        charmander.summonnum = 3;
+        Enemy box = new Enemy();
+        box.name = "Box";
+        box.health = 5;
+        Enemy enemyusing = new Enemy();
+        enemyusing.name = "place";
+        enemyusing.health = 0;
+        enemyusing.level = 0;
         Attack scrape = new Attack();
         scrape.name = "Scrape";
         scrape.dmg = rn.nextInt(6) * (using.level / 2);
+        Attack enemyscrape = new Attack();
+        enemyscrape.name = "";
+        enemyscrape.dmg = rn.nextInt(6) * (enemyusing.level / 2);
         String pokeslot_one = "none";
         String pokeslot_two = "none";
         String pokeslot_three = "none";
@@ -39,9 +52,7 @@ class Main {
         int summon = 0;
         int wp = 0;
         Scanner sc = new Scanner(System.in);
-        Enemy box = new Enemy();
-        box.name = "Box";
-        box.health = 5;
+
 
         try {
             System.out.println("Welcome to my Pokemon Java Game!");
@@ -130,11 +141,23 @@ class Main {
                             summon = rn.nextInt(6);
                         }
                         System.out.println("Summon = " + summon);
+                        switch (summon) {
+                            case 1:
+                                System.out.println("");
+                                break;
+                            case 2:
+                                System.out.println("");
+                                break;
+                            case 3:
+                                System.out.println("");
+                                break;
+                        }
+                        }
+
                     }
             }
 
         }
-    }
     public static void design(){
         try{
             System.out.println("             |             ");

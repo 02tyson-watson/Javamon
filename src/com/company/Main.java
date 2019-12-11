@@ -5,6 +5,10 @@ class Main {
     // public static void
     public static void main(String[] args) {
         Random rn = new Random();
+        Pokemon using = new Pokemon();
+        using.name = "place";
+        using.level = 0;
+        using.health = 0;
         Pokemon bulbasaur = new Pokemon();
         bulbasaur.name = "Bulbasaur";
         bulbasaur.level = 1;
@@ -19,7 +23,7 @@ class Main {
         charmander.health = 20 * (charmander.level/2);
         Attack scrape = new Attack();
         scrape.name = "Scrape";
-        scrape.dmg = rn.nextInt(6);
+        scrape.dmg = rn.nextInt(6) * (using.level / 2);
         String pokeslot_one = "none";
         String pokeslot_two = "none";
         String pokeslot_three = "none";
@@ -32,6 +36,7 @@ class Main {
         String move3 = "none";
         String move4 = "none";
         String battle = "place";
+        int summon = 0;
         int wp = 0;
         Scanner sc = new Scanner(System.in);
         Enemy box = new Enemy();
@@ -89,6 +94,42 @@ class Main {
                     int battlechance = rn.nextInt(11);
                     if (battlechance > 5){
                         design();
+                        switch (pokeslot_one){
+                            case "Charmander":
+                                using.name = charmander.name;
+                                using.level = charmander.health;
+                                using.health = charmander.level;
+                                break;
+                            case "Squirtle":
+                                using.name = squirtle.name;
+                                using.level = squirtle.level;
+                                using.health = squirtle.health;
+                                break;
+                            case "Bulbasaur":
+                                using.name = bulbasaur.name;
+                                using.level = bulbasaur.level;
+                                using.health = bulbasaur.health;
+                                break;
+                            default:
+                                System.out.println("You don't have a pokemon!");
+                                break;
+                        }
+                        if (wp > 50) {
+                            summon = rn.nextInt(6);
+                            summon = summon + 5;
+                        } else if (wp > 100) {
+                            summon = rn.nextInt(6);
+                            summon = summon + 10;
+                        } else if (wp > 150) {
+                            summon = rn.nextInt(6);
+                            summon = summon + 15;
+                        } else if (wp > 200){
+                            summon = rn.nextInt(6);
+                            summon = summon + 20;
+                        } else {
+                            summon = rn.nextInt(6);
+                        }
+                        System.out.println("Summon = " + summon);
                     }
             }
 

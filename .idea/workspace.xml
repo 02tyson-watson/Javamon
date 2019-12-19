@@ -25,6 +25,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -82,22 +83,26 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1815" height="30" key="GridCell.Tab.0.bottom" timestamp="1576077174653">
+    <state width="1815" height="922" key="GridCell.Tab.0.bottom" timestamp="1576763631836">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="30" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
-    <state width="1815" height="30" key="GridCell.Tab.0.center" timestamp="1576077174653">
+    <state width="1815" height="922" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1576763631836" />
+    <state width="1815" height="922" key="GridCell.Tab.0.center" timestamp="1576763631836">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="30" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
-    <state width="1815" height="30" key="GridCell.Tab.0.left" timestamp="1576077174653">
+    <state width="1815" height="922" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1576763631836" />
+    <state width="1815" height="922" key="GridCell.Tab.0.left" timestamp="1576763631836">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="30" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
-    <state width="1815" height="30" key="GridCell.Tab.0.right" timestamp="1576077174653">
+    <state width="1815" height="922" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1576763631836" />
+    <state width="1815" height="922" key="GridCell.Tab.0.right" timestamp="1576763631836">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="30" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1576077174653" />
+    <state width="1815" height="922" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1576763631836" />
+    <state x="492" y="182" key="SettingsEditor" timestamp="1576764971294">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="492" y="182" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1576764971294" />
     <state x="373" y="160" key="new project wizard" timestamp="1575986391088">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -108,7 +113,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/company/Main.java</url>
-          <line>83</line>
+          <line>522</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
